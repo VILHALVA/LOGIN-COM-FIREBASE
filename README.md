@@ -29,6 +29,35 @@ O aplicativo "Login com Firebase" permite aos usuários autenticarem-se em um si
    - Oferece tratamento de erros detalhado para problemas comuns durante o processo de autenticação, como senhas fracas, endereços de e-mail inválidos ou duplicados.
 
 ## EXECUTANDO O PROJETO NO ANDROID STUDIO:
+### ADICIONAR FIREBASE AO PROJETO ANDROID:
+1. **Criar Projeto no Firebase Console**:
+   - Vá para o [Firebase Console](https://console.firebase.google.com/).
+   - Clique em "Adicionar Projeto" e siga as instruções para criar um novo projeto.
+
+2. **Registrar o App no Firebase**:
+   - No painel do projeto Firebase, clique no ícone do Android para adicionar um aplicativo Android.
+   - Adicione o nome do pacote do seu app Android (você pode encontrá-lo no arquivo `AndroidManifest.xml`).
+   - Siga as instruções para baixar o arquivo `google-services.json`.
+
+3. **Adicionar `google-services.json` ao Projeto**:
+   - Coloque o arquivo `google-services.json` na pasta `app` do seu projeto Android.
+
+4. **Adicionar Dependências do Firebase**:
+   - Abra o arquivo `build.gradle` do projeto (`build.gradle (Project: <your-project>)`) e adicione a classe de serviços do Google:
+      ```gradle
+      buildscript {
+         repositories {
+               // ...
+               google() // Adicione esta linha
+         }
+         dependencies {
+               // ...
+               classpath 'com.google.gms:google-services:4.3.10' // Adicione esta linha
+         }
+      }
+      ```
+   - No arquivo `build.gradle (Module: app)`, adicione as dependências do Firebase
+   
 ### ABRINDO O PROJETO:
    - **Preparação do ambiente**:
      1. Certifique-se de que você tenha o [Android Studio](https://developer.android.com/studio) instalado em sua máquina.
