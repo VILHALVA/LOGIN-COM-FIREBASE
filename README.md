@@ -28,8 +28,27 @@ O aplicativo "Login com Firebase" permite aos usuários autenticarem-se em um si
 6. **Tratamento de Erros**:
    - Oferece tratamento de erros detalhado para problemas comuns durante o processo de autenticação, como senhas fracas, endereços de e-mail inválidos ou duplicados.
 
-## EXECUTANDO O PROJETO NO ANDROID STUDIO:
-### ADICIONAR FIREBASE AO PROJETO ANDROID:
+## EXECUTANDO O PROJETO NO ANDROID STUDIO:   
+### ABRINDO O PROJETO:
+   - **Preparação do ambiente**:
+     1. Certifique-se de que você tenha o [Android Studio](https://developer.android.com/studio) instalado em sua máquina.
+     2. Instale as dependências necessárias (SDKs, emuladores, etc.) conforme indicado pela documentação do Android Studio.
+
+   - **Abrindo o projeto no Android Studio**:
+     1. Abra o Android Studio.
+     2. Na tela de boas-vindas, selecione `Open an existing project`.
+     3. Navegue até o diretório `./CODIGO` onde o projeto foi clonado e selecione-o.
+     4. Aguarde enquanto o Android Studio indexa o projeto e baixa as dependências necessárias.
+
+   - **Executando o projeto**:
+     1. Conecte um dispositivo Android via USB ou configure um emulador de dispositivo Android no Android Studio.
+     2. Certifique-se de que o dispositivo/emulador está selecionado na barra de dispositivos do Android Studio.
+     3. Clique no botão `Run` (ícone de play) para compilar e executar o aplicativo.
+
+   - **Depuração**:
+     - Para iniciar a depuração, clique no botão `Debug` (ícone de inseto) e siga as instruções do Android Studio para definir pontos de interrupção e inspecionar variáveis.
+
+### ADICIONAR FIREBASE AO PROJETO:
 1. **Criar Projeto no Firebase Console**:
    - Vá para o [Firebase Console](https://console.firebase.google.com/).
    - Clique em "Adicionar Projeto" e siga as instruções para criar um novo projeto.
@@ -58,25 +77,6 @@ O aplicativo "Login com Firebase" permite aos usuários autenticarem-se em um si
       ```
    - No arquivo `build.gradle (Module: app)`, adicione as dependências do Firebase
    
-### ABRINDO O PROJETO:
-   - **Preparação do ambiente**:
-     1. Certifique-se de que você tenha o [Android Studio](https://developer.android.com/studio) instalado em sua máquina.
-     2. Instale as dependências necessárias (SDKs, emuladores, etc.) conforme indicado pela documentação do Android Studio.
-
-   - **Abrindo o projeto no Android Studio**:
-     1. Abra o Android Studio.
-     2. Na tela de boas-vindas, selecione `Open an existing project`.
-     3. Navegue até o diretório `./CODIGO` onde o projeto foi clonado e selecione-o.
-     4. Aguarde enquanto o Android Studio indexa o projeto e baixa as dependências necessárias.
-
-   - **Executando o projeto**:
-     1. Conecte um dispositivo Android via USB ou configure um emulador de dispositivo Android no Android Studio.
-     2. Certifique-se de que o dispositivo/emulador está selecionado na barra de dispositivos do Android Studio.
-     3. Clique no botão `Run` (ícone de play) para compilar e executar o aplicativo.
-
-   - **Depuração**:
-     - Para iniciar a depuração, clique no botão `Debug` (ícone de inseto) e siga as instruções do Android Studio para definir pontos de interrupção e inspecionar variáveis.
-
 ### GERANDO O APK:
    Depois de melhorar o projeto, você pode gerar o APK novamente. Siga os passos abaixo para gerar o APK usando o Android Studio:
 
